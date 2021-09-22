@@ -1,0 +1,41 @@
+
+
+
+body {
+ background: #333;
+  padding-top: 5em;
+display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+  font-size: 18px;
+}
+
+div.kolumna {
+	width: 20%;
+	height: 30px;
+	background: #444;
+	text-align: center;
+	
+	
+}
+div.zdj{
+display: flex;
+	justify-content: center;
+	
+	
+
+}
+div.wybor{
+display: flex;
+	justify-content: row;
+	width: 75%;
+}
+
+
+p {
+background-image: url(jako.jpg) 
+}
+

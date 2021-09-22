@@ -1,0 +1,35 @@
+
+body {
+   background: #333;
+  padding-top: 5em;
+display: flex;
+	
+	flex-wrap: wrap;
+	justify-content: row;
+	
+  font-size: 15px;
+}
+
+
+
+
+.textanime p {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; 
+ 
+  white-space: nowrap;
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation: typing 3s steps(30, end),
+    blink-caret .4s step-end infinite;
+
+}
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+}

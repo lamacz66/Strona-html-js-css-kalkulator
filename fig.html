@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Pole i Obwód figur</title>
+<link rel="stylesheet" href="fortnite.css">
+</head>
+<body>
+<div class="textanime">
+<p>Pole i Obwód figur</p>
+
+</div><br>
+    
+    podaj bok 1 <input type="text" id="liczba1"><br><br>
+podaj bok 2  <input type="text" id="liczba2"><br><br>
+podaj wysokość <input type="text" id="liczba3"><br><br>
+podaj 4 bok (trapez) <input type="text" id="liczba4"><br><br>
+<button onclick="dodaj()">kwadrat</button>
+<button onclick="odejmij()">prostokąt</button>
+<button onclick="mnoz()">trójkąt</button>
+<button onclick="dziel()">rąb </button>
+<button onclick="trapez()">trapez </button>
+
+
+
+    
+    
+    
+    <script>
+function dodaj(){
+    var liczba1=parseInt(document.getElementById("liczba1").value);
+    var liczba2=parseInt(document.getElementById("liczba2").value);
+    var wynik2=liczba1*liczba1;
+var wynikobw2=liczba1*4;
+    document.getElementById("wynik").innerHTML=wynik2;
+document.getElementById("wynikobw").innerHTML=wynikobw2;
+}
+        
+function odejmij(){
+    var liczba1=parseInt(document.getElementById("liczba1").value);
+    var liczba2=parseInt(document.getElementById("liczba2").value);
+    var wynik2=(liczba1+liczba2)*2;
+    var wynikobw2=liczba1*liczba2;
+    document.getElementById("wynik").innerHTML=wynik2;
+ document.getElementById("wynikobw").innerHTML=wynikobw2;
+}
+function mnoz(){
+    var liczba1=parseInt(document.getElementById("liczba1").value);
+    var liczba2=parseInt(document.getElementById("liczba2").value);
+    var liczba3=parseInt(document.getElementById("liczba3").value);
+    var wynik2=liczba1+liczba2+liczba3;
+     var wynikobw2=(liczba1*liczba3)/2;
+    document.getElementById("wynik").innerHTML=wynik2;
+document.getElementById("wynikobw").innerHTML=wynikobw2;
+ }
+function dziel(){
+    var liczba1=parseInt(document.getElementById("liczba1").value);
+    var liczba3=parseInt(document.getElementById("liczba3").value);
+    var wynik2=liczba1*liczba3;
+var wynikobw2=liczba1*4;
+    document.getElementById("wynik").innerHTML=wynik2;
+document.getElementById("wynikobw").innerHTML=wynikobw2;
+}
+
+function trapez(){
+    var liczba1=parseInt(document.getElementById("liczba1").value);
+    var liczba2=parseInt(document.getElementById("liczba2").value);
+    var liczba3=parseInt(document.getElementById("liczba3").value);
+    var liczba4=parseInt(document.getElementById("liczba4").value);
+    var wynik2=((liczba1+liczba2)*liczba3)/2;
+var wynikobw2= liczba1+liczba2+liczba3+liczba4;
+    document.getElementById("wynik").innerHTML=wynik2;
+document.getElementById("wynikobw").innerHTML=wynikobw2;
+}
+
+        
+        </script>
+    pole: <div id="wynik"></div>
+  obw: <div id="wynikobw"></div>
+</body>
+</html>
